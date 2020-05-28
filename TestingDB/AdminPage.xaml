@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TestingDB.AdminPage"
+             BackgroundImageSource="bg.png"
+             NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+        <ScrollView>
+            <ListView x:Name="Floorlist"
+                  ItemsSource="{Binding Floorlist}"
+                  HasUnevenRows="True"
+                  ItemSelected="OnItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Vertical"  VerticalOptions="Center" HorizontalOptions="Center">
+
+
+                                <Label  Padding="0,30,0,0" Text="{Binding Title}" 
+                                        TextColor="Black"
+                                        FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalOptions="Center" HeightRequest="100"/>
+
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+            </ListView>
+
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

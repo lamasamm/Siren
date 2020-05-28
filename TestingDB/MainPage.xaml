@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TestingDB.MainPage"
+             BackgroundImageSource="bg.png"
+             NavigationPage.HasNavigationBar="False">
+
+    <ScrollView>
+        <StackLayout>
+
+
+
+
+
+
+            <Entry x:Name="txtId" Placeholder="Enter your username"  FontSize="Large" FontAttributes="Bold" TextColor="Gray" ></Entry>
+
+
+            <Entry x:Name="txtName" IsPassword="True" Placeholder="Enter a password" FontSize="Large" FontAttributes="Bold" TextColor="Gray"  ></Entry>
+
+
+            <Entry x:Name="age" Placeholder="Enter your age" FontSize="Large" FontAttributes="Bold" TextColor="Gray" ></Entry>
+
+
+
+            <Label Text="Whats your gender?" FontSize="Large" FontAttributes="Bold" TextColor="Gray" Padding="10,10,10,10" HorizontalOptions="Center"></Label>
+            
+            <StackLayout>
+
+
+                <Grid>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        
+                    </Grid.ColumnDefinitions>
+
+                    
+               
+                   <StackLayout  Grid.Row="0" Grid.Column="1" Padding="60,0,10,0">
+
+                     <Image   Source="male.png" WidthRequest="100" HeightRequest="100"></Image>
+                     <CheckBox   IsChecked="False" x:Name="m" HorizontalOptions="Center" ></CheckBox>
+
+                  </StackLayout>
+
+              
+                    <StackLayout Grid.Row="0" Grid.Column="2">
+                    <Image   Grid.Row="1" Grid.Column="2" Source="female.png"  WidthRequest="100" HeightRequest="100" ></Image>
+                     <CheckBox  Grid.Row="2" Grid.Column="1" IsChecked="False" x:Name="f" HorizontalOptions="Center"></CheckBox>
+                    </StackLayout>
+
+                    
+                    
+                </Grid>
+
+
+            </StackLayout>
+
+
+            <Label Text=" "></Label>
+
+            <StackLayout >
+                <Label Text="Pick your Blood Type:" FontSize="Large" FontAttributes="Bold" TextColor="Gray" Padding="10,10,10,10"></Label>
+            <Picker x:Name="BloodType_Picker" FontAttributes="Bold" TextColor="Gray" ></Picker>
+                </StackLayout>
+
+
+            <Label Text=" "></Label>
+
+            <StackLayout >
+                <Label Text="Do you consider yourself a:" FontSize="Large" FontAttributes="Bold" TextColor="Gray" Padding="10,10,10,10"></Label>
+                <Picker x:Name="w_Picker" FontAttributes="Bold" TextColor="Gray" ></Picker>
+            </StackLayout>
+
+
+            <Label Text=" "></Label>
+
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Do you have any respiratory diseases?" FontSize="Large" FontAttributes="Bold" TextColor="Gray" Padding="10,0,0,0"> </Label>
+                <CheckBox   x:Name="sick1"  IsChecked="False" Margin="10,0,0,0"></CheckBox>
+               </StackLayout>
+
+            <Label Text=" "></Label>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Do you have a physical disability? "  FontSize="Large" FontAttributes="Bold" TextColor="Gray" Padding="10,0,0,0"></Label>
+                <CheckBox   x:Name="sick2"  IsChecked="False" Margin="30,0,0,0"></CheckBox>
+                </StackLayout>
+
+            <Label Text=" "></Label>
+
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Do you have any muscle joint diseases?"   FontSize="Large" FontAttributes="Bold" TextColor="Gray" Padding="10,0,0,0" ></Label>
+                <CheckBox   x:Name="sick3"  IsChecked="False" Margin="10,0,0,0"></CheckBox>
+                    </StackLayout>
+
+            <Label Text=" "></Label>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Do you have any heart diseases?"  FontSize="Large" FontAttributes="Bold" TextColor="Gray" Padding="10,0,0,0" ></Label>
+                <CheckBox   x:Name="sick4"  IsChecked="False" Margin="50,0,0,0"></CheckBox>
+            </StackLayout>
+
+
+            <Label Text=" "></Label>
+
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Are you familiar with this building?"  FontSize="Large" FontAttributes="Bold" TextColor="Gray" Padding="10,0,0,0" ></Label>
+                <CheckBox   x:Name="familirity"  IsChecked="False" Margin="20,0,0,0"></CheckBox>
+            </StackLayout>
+            
+            
+
+            <StackLayout  HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+            
+        
+
+                <Grid>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+
+                    </Grid.ColumnDefinitions>
+
+                    <ImageButton Margin="10,10,10,10" WidthRequest="180" HeightRequest="80" Grid.Column="1" Source="Back_butt.png" Clicked="back_butt" BackgroundColor="Transparent" HorizontalOptions="End"/>
+                    <ImageButton Margin="10,10,10,10" WidthRequest="170" HeightRequest="70" Grid.Column="2" Source="Confirm_butt.png" Clicked="add_butt" BackgroundColor="Transparent" HorizontalOptions="Start"/>
+
+
+                </Grid>
+
+            </StackLayout>
+                
+                
+             
+    </StackLayout>
+    </ScrollView>
+
+</ContentPage>

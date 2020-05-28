@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TestingDB.FloorDetails"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="bg.png">
+    
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition  Height="Auto"></RowDefinition>
+                <RowDefinition  Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+
+
+            <Label Padding="20,50,20,50" Grid.Row="0" x:Name="floor_title" HorizontalOptions="Center"  FontAttributes="Bold" FontSize="25"></Label>
+
+            <StackLayout Grid.Row="1" Padding="10,10,10,10">
+
+
+                <Grid>
+
+                    <StackLayout Grid.Row="0" Grid.Column="0" Padding="10,10,10,10" >
+
+                        <Label x:Name="SUC_NUM" FontSize="40" FontAttributes="Bold" HorizontalOptions="Center"></Label>
+                        <Label Text="Succsess Evacuation" FontSize="Medium" FontAttributes="Bold" HorizontalOptions="Center"></Label>
+
+
+                    </StackLayout>
+
+                    <StackLayout   Grid.Row="0" Grid.Column="1" Padding="10,10,10,10" >
+
+                        <Label x:Name="FGR_NUM" FontSize="40" FontAttributes="Bold" HorizontalOptions="Center"></Label>
+                        <Label Text="Fire Growth Rate" FontSize="Medium" FontAttributes="Bold" HorizontalOptions="Center"></Label>
+
+
+                    </StackLayout>
+
+                </Grid>
+
+
+
+            </StackLayout>
+
+            <StackLayout Grid.Row="2"  Padding="30,10,10,10" HorizontalOptions="Center">
+
+                <Label  x:Name="CMC_NUM" FontSize="40" FontAttributes="Bold" HorizontalOptions="Center" ></Label>
+                <Label Text="CMC" FontSize="Medium" FontAttributes="Bold" HorizontalOptions="Center"></Label>
+
+
+            </StackLayout>
+
+            <StackLayout Grid.Row="2" Padding="0,150,0,0">
+
+                <Label Text="Crowd Map" FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center"></Label>
+                <Image   x:Name="Crowd_Map" Aspect="AspectFill"/>
+
+            </StackLayout>
+
+
+
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

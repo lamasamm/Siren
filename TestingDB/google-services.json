@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "369403339625",
+    "firebase_url": "https://test-17498.firebaseio.com",
+    "project_id": "test-17498",
+    "storage_bucket": "test-17498.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:369403339625:android:4134a7eb189d2c692713f8",
+        "android_client_info": {
+          "package_name": "TestingDB.Droid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "369403339625-miv1cc215b3i0j3c3qb97hlitrv72lfm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChgkBAzbFnlbBO54mAH_ilbQYOcUF8wJI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "369403339625-miv1cc215b3i0j3c3qb97hlitrv72lfm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

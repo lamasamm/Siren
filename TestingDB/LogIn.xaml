@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TestingDB.LogIn"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="White">
+    
+    <ContentPage.Content>
+        <Grid RowSpacing="0" ColumnSpacing="0" >
+
+            <StackLayout Grid.Column="0" Grid.ColumnSpan="2" >
+
+                <Image Source="NewLogo.png" WidthRequest="1000" HeightRequest="400" ></Image>
+
+
+            </StackLayout>
+
+            <StackLayout Grid.Row="1" Grid.ColumnSpan="2" Padding="0,100,0,100">
+                <!-- Place new controls here -->
+                <Entry x:Name="Username_Entry" Placeholder="Username" HorizontalOptions="CenterAndExpand" VerticalOptions="Center"/>
+                <Entry IsPassword="True" x:Name="Password_Entry" Placeholder="Password" HorizontalOptions="CenterAndExpand" VerticalOptions="Center"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="2" Grid.Column="0" Padding="0,0,0,0">
+
+                <ImageButton Clicked="SignInButt_Clicked" x:Name="SignInButt"  BackgroundColor="Transparent" Source="SignIn_.png" WidthRequest="180" HeightRequest="80" HorizontalOptions="End" ></ImageButton>
+
+            </StackLayout>
+
+            <StackLayout Grid.Row="2" Grid.Column="1">
+
+                <ImageButton Clicked="SignUpButt_Clicked" x:Name="SignUpButt" BackgroundColor="Transparent" Source="SignUp_.png" WidthRequest="180" HeightRequest="80" HorizontalOptions="Start"></ImageButton>
+
+            </StackLayout>
+
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
